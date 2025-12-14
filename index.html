@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Happy Birthday Siyu ðŸ’–</title>
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<img src="siyu.jpg" class="photo" alt="Siyu" />
+
+
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+
+<!-- Floating Hearts -->
+<div class="floating-hearts"></div>
+
+
+<!-- PAGE 1 -->
+<section class="page active" id="page1">
+<h1 class="title">Happy Birthday Siyu </h1>
+<p class="subtitle">To day is your birthday my love <br>
+  Jaana one thing I want to say you this<br>
+ plz  smile today don't thing about past  now i will be your past, future and present <br>
+ I shall make it special for you there A little surprise made with love to make it memorable</p>
+<button class="btn pink" onclick="nextPage(2)">Open Your Gift </button>
+
+<button id="musicBtn" class="music-btn"> Play Music</button>
+
+<audio id="bgMusic">
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+<button onclick="document.getElementById('gift').style.display='block'">
+   Open Your Gift
+</button>
+
+<div id="gift" style="display:none; margin-top:20px;">
+  <p> This gift is made with all my heart for you </p>
+
+  <audio controls autoplay>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+</section>
+
+
+<!-- PAGE 2 -->
+<section class="page" id="page2">
+<div class="envelope" onclick="nextPage(3)">boo boo  </div>
+<p class="hint">Tap the letter</p>
+</section>
+
+
+<!-- PAGE 3 -->
+<section class="page" id="page3">
+<div class="card">
+<div class="heart-circle">Jaana</div>
+<h2>Birthday Letter </h2>
+<p class="letter">
+Dear Siyu, <br><br>
+From the moment you came into my life, I truly started living my life. I love you so much, Siyu.
+
+Today, 15/12/2025, is your birthday  . I’m really sorry that I’m not near you right now because of some restrictions from my parents, but you know this. I always want to be closest to your heart. 
+I wanted to make your day as special as I possibly can. I wanted to give you so many things  not just gift  , but also warm hugs   , forehead kisses  ,  I want to cut the cake  with you, to stand in front of you and give you all the happiness   that I can.
+I can’t promise things that aren’t possible for me right now, but a few days ago I promised you a gift finfect  a special gift  you asked me for. And here it is. 
+
+I may not be able to send something expensive, but this gift comes with all my love and effort.  It may look small , but it’s the best I can give you from my heart. 
+Now please smile for yourself, Siyu . I want to see you happy. 
+
+I know your birthdays haven’t always been good or memorable. You don’t need to remember those moments. Forget everything which make you to feel bad.Let, celebrate your birthday with me, your brother, your good friends, your mom and your dad, and most importantly  with happiness.  
+
+I truly want to make this birthday memorable for you forever. I’ve put all my efforts into making you smile today, and into making this celebration something we’ll always remember.
+If you don’t smile, all my efforts feel incomplete ,because my biggest wish is to see you happy. So please smile, Jaana . 
+
+Forever yours,
+<b>Rupesh<b>
+</p>
+<button class="btn pink" onclick="nextPage(4)">Next Surprise </button>
+</div>
+</section>
+
+
+<!-- PAGE 4 -->
+<section class="page" id="page4">
+<h2>Make a Birthday Wish </h2>
+<div class="cake">baatu</div>
+<button class="btn green" onclick="nextPage(5)">Celebrate with happiness</button>
+</section>
+
+
+<!-- PAGE 5 -->
+<section class="page" id="page5">
+<h2 class="final">I will Forever Yours, Siyu </h2>
+<p class="subtitle">Dear Siyu,<br><br>
+    “May your days always be filled with gentle smiles, warm moments, and little surprises that remind you how special you are.
+This is just a small gift, but it carries a lot of good wishes for your happiness.
+Happy Birthday ”  
+      
+       Again at last i only want to say , Happy Birthday my Love<br>"I am always be there for you"</p>
+<button class="btn pink" onclick="sendKisses()">Send Birthday kiss </button>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
